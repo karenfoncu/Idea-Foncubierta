@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escuela de Música</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>MusicArte San Miguel</h1>
+  <h2>Aranceles de alumnos - Julio 2023</h2>
+  
+  <!-- Sección de ingreso de alumnos -->
+  <div class="form-section">
+    <form id="formulario-alumno">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre">
+    
+      <label for="apellidos">Apellidos:</label>
+      <input type="text" id="apellidos">
+    
+      <label for="arancel">Arancel:</label>
+      <select id="arancel">
+        <option value="4500">$4500</option>
+        <option value="5000">$5000</option>
+        <option value="6000">$6000</option>
+      </select>
+    
+      <button type="submit">Agregar Alumno</button>
+    </form>
+  </div>
+  
+  <!-- Sección de tabla con alumnos registrados -->
+  <div class="table-section">
+    <h2>Alumnos Registrados</h2>
+    <table id="tabla-alumnos">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Arancel</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+  
+  <!-- Sección de filtros -->
+  <div class="filters-section">
+    <h2>Filtrar Alumnos</h2>
+    <form id="formulario-filtros">
+      <label for="filtro-nombre">Nombre:</label>
+      <input type="text" id="filtro-nombre">
+    
+      <label for="filtro-arancel">Arancel:</label>
+      <input type="text" id="filtro-arancel">
+    
+      <button type="submit">Filtrar</button>
+      <button type="button" onclick="limpiarFiltros()">Limpiar</button>
+    </form>
+  </div>
+  
+  <script src="scrpt.js"></script>
+</body>
+</html>
+

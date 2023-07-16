@@ -1,0 +1,108 @@
+/* Estilos generales */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1, h2 {
+  color: #0080ff;
+  text-align: center;
+}
+
+/* Sección de ingreso de alumnos */
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.form-section h2 {
+  margin-bottom: 10px;
+}
+
+label {
+  margin-bottom: 5px;
+  color: #0080ff;
+}
+
+input[type="text"],
+select {
+  width: 200px;
+  padding: 8px;
+  border: 1px solid #0080ff;
+  border-radius: 4px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #0080ff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0066cc;
+}
+
+/* Tabla de alumnos registrados */
+
+.table-section {
+  margin-bottom: 20px;
+  text-align: center; 
+}
+
+table {
+  margin: 0 auto; 
+  width: auto; 
+  border-collapse: collapse;
+  margin-top: 20px;
+  padding-left: 80px; 
+}
+
+th, td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+/* Botones de filtrado */
+
+.filters-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.filters-section h2 {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.filters-section button {
+  margin: 0 5px;
+  background-color: #0080ff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.filters-section button:hover {
+  background-color: #0066cc;
+}
